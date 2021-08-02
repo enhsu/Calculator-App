@@ -41,5 +41,5 @@ export default function getResult(str) {
   while (stack.length) {
     result += stack.pop();
   }
-  return String(result);
+  return Number(result.toFixed(10)).toString();
 }
